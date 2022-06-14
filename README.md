@@ -1,6 +1,6 @@
 # Artificial-Intelligence-final-project
 ## Main approach
-# Overview
+### Overview
 我們的目的是辨識影像中的人有沒以戴口罩。
 我們使用Transfer Learning的方法，部分採用MobilenetV2這個模型，採用的部分是對影像進行特徵擷取，載入這個模型之後我們把最後一層改成要辨識的兩種類別，就是有無戴口罩，然後針對這些進行訓練。
 ### 架構
