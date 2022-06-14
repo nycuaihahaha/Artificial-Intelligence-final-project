@@ -72,11 +72,16 @@ def main():
             wom=wom+1
             if ~(mask>withoutMask):
                 without=without+1
-    print("result")
+    print("Result")
+    print("Number of image with mask:")
     print(withmask)
+    print("Number of image without mask:")
     print(without)
+    print("Number of image with mask and predict correct:")
     print(wm)
+    print("Number of image without mask and predict correct:")
     print(wom)
+    print("Accuracy:")
     print((withmask+without)/(wm+wom))
 
 if __name__ == '__main__':
