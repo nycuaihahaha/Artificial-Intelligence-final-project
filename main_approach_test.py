@@ -20,7 +20,7 @@ from tensorflow.keras.preprocessing.image import load_img
 detector = mtcnn.MTCNN()
 
 
-# 辨識人臉與偵測是否有戴口罩
+# 偵測是否有戴口罩
 def predict_mask(frame, mask_net):
     faces = []
     preds = []
@@ -58,7 +58,6 @@ def main():
     for imagePath in imagePaths:
         count=count+1
         labe = ntpath.normpath(imagePath).split(os.path.sep)[-2]
-        # 注意這裡將圖片轉成224 x 224，與MobileNetV2模型需要的Input一樣大小
         img = cv2.imread(imagePath)
         img = np.array(img)
         frame = imutils.resize(img, width=400)
@@ -73,12 +72,6 @@ def main():
             wom=wom+1
             if ~(mask>withoutMask):
                 without=without+1
-        #cv2.imshow("Frame", frame)
-        #key = cv2.waitKey(1) & 0xFF
-        #if key == ord("q"):
-            #break
-
-    #cv2.destroyAllWindows()
     print("result")
     print(withmask)
     print(without)
