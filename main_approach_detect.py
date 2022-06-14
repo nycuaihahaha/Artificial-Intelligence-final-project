@@ -64,7 +64,6 @@ def main():
     count = 0
     for imagePath in imagePaths:
         count=count+1
-        # 注意這裡將圖片轉成224 x 224，與MobileNetV2模型需要的Input一樣大小
         img = cv2.imread(imagePath)
         img = np.array(img)
         frame = imutils.resize(img, width=400)
