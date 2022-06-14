@@ -19,4 +19,4 @@
 main_approach_test.py
 其中的wm是有戴口罩的照片數，而wom是沒有的，withmask是有戴口罩且判斷對的，without是沒戴口罩且判斷對的
 ### 實際應用
-如果要應用在實際影像上（有可能有許多張人臉或是沒有人臉），需要用main_approach_detect.py的程式碼。
+如果要應用在實際影像上（有可能有許多張人臉或是沒有人臉），需要用main_approach_detect.py的程式碼，會輸出匡出人臉並判斷有沒有戴口罩的影像。
