@@ -1,7 +1,8 @@
 # Artificial-Intelligence-final-project
 ## Main approach
 # Overview
-我們的模型是採用Transfer Learning，而我們部分採用MobilenetV2，採用的部分是對影像進行特徵擷取，並接上自己的input及辨識層，我們載入這個模型之後把最後一層改成我們要辨識的兩種類別，然後針對這些進行訓練。
+我們的目的是辨識影像中的人有沒以戴口罩。
+我們使用Transfer Learning的方法，部分採用MobilenetV2這個模型，採用的部分是對影像進行特徵擷取，載入這個模型之後我們把最後一層改成要辨識的兩種類別，就是有無戴口罩，然後針對這些進行訓練。
 ### 架構
 - application
    - mask_detector
@@ -21,7 +22,7 @@
 - tensorflow == 2.0.4
 - imutils
 - matplotlib
-### 執行方法
+### 訓練模型
 開啟terminal，切換到mian_approach_train.py檔案的目錄下，執行python main_approach_train.py -d {你的train資料集目錄}，即可開始訓練模型。
 ### 測試
 main_approach_test.py
