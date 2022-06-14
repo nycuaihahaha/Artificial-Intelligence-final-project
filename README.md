@@ -1,5 +1,7 @@
 # Artificial-Intelligence-final-project
 ## Main approach
+# Overview
+我們的模型是採用Transfer Learning，而我們部分採用MobilenetV2，採用的部分是對影像進行特徵擷取，並接上自己的input及辨識層，我們載入這個模型之後把最後一層改成我們要辨識的兩種類別，然後針對這些進行訓練。
 ### 架構
 - application
    - mask_detector
