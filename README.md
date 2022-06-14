@@ -14,8 +14,7 @@
       - with_mask
       - without_mask
    - real
-      - with_mask
-      - without_mask
+      - real_image
 ### python環境需求
 - tensorflow == 2.0.4
 - imutils
